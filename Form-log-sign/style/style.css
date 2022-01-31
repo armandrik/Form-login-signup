@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E3F4FF;
+  font-family: 'Raleway', 'Microsoft JhengHei', sans-serif;
+}
+
+.meta-container {
+  background-color: #ffffff;
+  border-radius: 50px;
+  height: 80vh;
+  -webkit-box-shadow: 0 0 106px 1px #b7b7b7;
+          box-shadow: 0 0 106px 1px #b7b7b7;
+  width: clamp(350px, 50%, 350px);
+  margin-top: 80px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meta-container .first-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: ease-out .2s;
+  transition: ease-out .2s;
+}
+
+.meta-container .first-slide button {
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #004353;
+  cursor: pointer;
+  color: #E3F4FF;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.meta-container .first-slide button .fa-angle-right {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.meta-container .first-slide h3 {
+  text-align: center;
+  color: #414141;
+  margin-bottom: 10px;
+}
+
+.meta-container .first-slide .g-f-container-first-slide {
+  width: 100%;
+}
+
+.meta-container .first-slide .g-f-container-first-slide p {
+  color: #353535;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding-left: 22px;
+}
+
+.meta-container .first-slide .g-f-container-first-slide .google {
+  margin-left: 11px;
+}
+
+.meta-container .first-slide .g-f-container-first-slide .facebook {
+  margin-left: 33px;
+}
+
+.meta-container .log-in-container {
+  width: 0;
+  height: 0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: ease-out .2s;
+  transition: ease-out .2s;
+}
+
+.meta-container .log-in-container .header {
+  width: 100%;
+  margin-top: -54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meta-container .log-in-container .header .header-font {
+  color: #414141;
+  padding-left: 8px;
+  font-size: 32px;
+}
+
+.meta-container .log-in-container .header i {
+  color: #414141;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.meta-container .log-in-container .g-f-container {
+  width: 100%;
+  margin-top: -120px;
+}
+
+.meta-container .log-in-container .g-f-container .g-f-text {
+  color: #353535;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding-left: 11px;
+}
+
+.meta-container .log-in-container .g-f-container .google {
+  margin-left: 11px;
+}
+
+.meta-container .log-in-container .g-f-container .facebook {
+  margin-left: 33px;
+}
+
+.meta-container .log-in-container .email-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -132px;
+}
+
+.meta-container .log-in-container .email-container .label {
+  color: #414141;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.meta-container .log-in-container .email-container .label:last-of-type {
+  margin-top: 20px;
+}
+
+.meta-container .log-in-container .email-container .input {
+  height: 5vh;
+  border-radius: 20px;
+  border: none;
+  background-color: #E3F4FF;
+  padding: 0 10px;
+  color: #414141;
+  font-size: 14px;
+}
+
+.meta-container .log-in-container .email-container .input:focus {
+  outline: none;
+}
+
+.meta-container .log-in-container .log-in-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -100px;
+}
+
+.meta-container .log-in-container .log-in-btn .log-in {
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #004353;
+  cursor: pointer;
+  color: #E3F4FF;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.meta-container .log-in-container .log-in-btn .new-acc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meta-container .log-in-container .log-in-btn .new-acc .footer-text {
+  color: #414141;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.meta-container .log-in-container .log-in-btn .new-acc .sign-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #353535;
+}
+
+.meta-container .sign-up-container {
+  width: 0;
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: ease-out .2s;
+  transition: ease-out .2s;
+}
+
+.meta-container .sign-up-container header {
+  width: 100%;
+  margin-top: -54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meta-container .sign-up-container header h1 {
+  color: #414141;
+  padding-left: 8px;
+  font-size: 32px;
+}
+
+.meta-container .sign-up-container header i {
+  color: #414141;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.meta-container .sign-up-container .g-f-container-sign {
+  width: 100%;
+  margin-top: -120px;
+}
+
+.meta-container .sign-up-container .g-f-container-sign p {
+  color: #353535;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding-left: 11px;
+}
+
+.meta-container .sign-up-container .g-f-container-sign .google-sign {
+  margin-left: 11px;
+}
+
+.meta-container .sign-up-container .g-f-container-sign .facebook-sign {
+  margin-left: 33px;
+}
+
+.meta-container .sign-up-container .email-container-sign {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -132px;
+}
+
+.meta-container .sign-up-container .email-container-sign label {
+  color: #414141;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.meta-container .sign-up-container .email-container-sign label:last-of-type {
+  margin-top: 20px;
+}
+
+.meta-container .sign-up-container .email-container-sign input {
+  height: 5vh;
+  border-radius: 20px;
+  border: none;
+  background-color: #E3F4FF;
+  padding: 0 10px;
+  color: #414141;
+  font-size: 14px;
+}
+
+.meta-container .sign-up-container .email-container-sign input:first-of-type {
+  margin-bottom: 20px;
+}
+
+.meta-container .sign-up-container .email-container-sign input:focus {
+  outline: none;
+}
+
+.meta-container .sign-up-container .log-in-btn-sign {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -100px;
+}
+
+.meta-container .sign-up-container .log-in-btn-sign button {
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #004353;
+  cursor: pointer;
+  color: #E3F4FF;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.meta-container .sign-up-container .log-in-btn-sign .new-acc-sign {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meta-container .sign-up-container .log-in-btn-sign .new-acc-sign p {
+  color: #414141;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.meta-container .sign-up-container .log-in-btn-sign .new-acc-sign a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #353535;
+}
+
+.logo, .meta-container .first-slide .g-f-container-first-slide .google, .meta-container .first-slide .g-f-container-first-slide .facebook, .meta-container .log-in-container .g-f-container .google, .meta-container .log-in-container .g-f-container .facebook, .meta-container .sign-up-container .g-f-container-sign .google-sign, .meta-container .sign-up-container .g-f-container-sign .facebook-sign {
+  color: #C9C9C9;
+  font-size: 24px;
+  width: 40%;
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #E3F4FF;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

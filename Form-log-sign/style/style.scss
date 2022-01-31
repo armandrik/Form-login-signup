@@ -1,0 +1,290 @@
+$primary-color: #E3F4FF;
+$secondary-color: #ffffff;
+$main-text-color: #414141;
+$text-color: #353535;
+$icon-color: #cccccc;
+$input-color: #ddfffde1;
+$button-color: #004353;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    font-family: 'Raleway', 'Microsoft JhengHei', sans-serif;
+}
+
+.meta-container {
+    background-color: $secondary-color;
+    border-radius: 50px;
+    height: 80vh;
+    box-shadow: 0 0 106px 1px #b7b7b7;
+    width: clamp(350px, 50%, 350px);
+    margin-top: 80px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .first-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: ease-out .2s;
+        button {
+            height: 5vh;
+            border: none;
+            border-radius: 10px;
+            background-color: $button-color;
+            cursor: pointer;
+            color: $primary-color;
+            font-size: 18px;
+            margin-bottom: 20px;
+            .fa-angle-right {
+                padding-left: 10px;
+                font-size: 16px;
+            }
+        }
+        h3 {
+            text-align: center;
+            color: $main-text-color;
+            margin-bottom: 10px;
+        }
+        .g-f-container-first-slide {
+            width: 100%;
+            p {
+                color: $text-color;
+                font-size: 13px;
+                margin-bottom: 20px;
+                padding-left: 22px;
+            }
+            .google {
+                @extend .logo;
+                margin-left: 11px;
+            }
+            .facebook {
+                @extend .logo;
+                margin-left: 33px;
+            }
+        }
+    }
+    .log-in-container {
+        width: 0;
+        height: 0vh;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: ease-out .2s;
+        .header {
+            width: 100%;
+            margin-top: -54px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .header-font {
+                color: $main-text-color;
+                padding-left: 8px;
+                font-size: 32px;
+            }
+            i {
+                color: $main-text-color;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+        .g-f-container {
+            width: 100%;
+            margin-top: -120px;
+            .g-f-text {
+                color: $text-color;
+                font-size: 13px;
+                margin-bottom: 20px;
+                padding-left: 11px;
+            }
+            .google {
+                @extend .logo;
+                margin-left: 11px;
+            }
+            .facebook {
+                @extend .logo;
+                margin-left: 33px;
+            }
+        }
+        .email-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -132px;
+            .label {
+                color: $main-text-color;
+                margin-bottom: 5px;
+                padding-left: 5px;
+                &:last-of-type {
+                    margin-top: 20px;
+                }
+            }
+            .input {
+                height: 5vh;
+                border-radius: 20px;
+                border: none;
+                background-color: $primary-color;
+                padding: 0 10px;
+                color: $main-text-color;
+                font-size: 14px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .log-in-btn {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -100px;
+            .log-in {
+                height: 5vh;
+                border: none;
+                border-radius: 10px;
+                background-color: $button-color;
+                cursor: pointer;
+                color: $primary-color;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .new-acc {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .footer-text {
+                    color: $main-text-color;
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+                .sign-link {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+    .sign-up-container {
+        width: 0;
+        height: 0;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: ease-out .2s;
+        header {
+            width: 100%;
+            margin-top: -54px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            h1 {
+                color: $main-text-color;
+                padding-left: 8px;
+                font-size: 32px;
+            }
+            i {
+                color: $main-text-color;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+        .g-f-container-sign {
+            width: 100%;
+            margin-top: -120px;
+            p {
+                color: $text-color;
+                font-size: 13px;
+                margin-bottom: 20px;
+                padding-left: 11px;
+            }
+            .google-sign {
+                @extend .logo;
+                margin-left: 11px;
+            }
+            .facebook-sign {
+                @extend .logo;
+                margin-left: 33px;
+            }
+        }
+        .email-container-sign {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -132px;
+            label {
+                color: $main-text-color;
+                margin-bottom: 5px;
+                padding-left: 5px;
+                &:last-of-type {
+                    margin-top: 20px;
+                }
+            }
+            input {
+                height: 5vh;
+                border-radius: 20px;
+                border: none;
+                background-color: $primary-color;
+                padding: 0 10px;
+                color: $main-text-color;
+                font-size: 14px;
+                &:first-of-type {
+                    margin-bottom: 20px;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .log-in-btn-sign {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -100px;
+            button {
+                height: 5vh;
+                border: none;
+                border-radius: 10px;
+                background-color: $button-color;
+                cursor: pointer;
+                color: $primary-color;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .new-acc-sign {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                p {
+                    color: $main-text-color;
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    color: #C9C9C9;
+    font-size: 24px;
+    width: 40%;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background-color: $primary-color;
+    cursor: pointer;
+}
